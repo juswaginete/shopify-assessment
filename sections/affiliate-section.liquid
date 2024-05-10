@@ -1,0 +1,319 @@
+{{ 'affiliate.css' | asset_url | stylesheet_tag }}
+
+<div class="affiliate-section-container color-{{ section.settings.color_scheme }}">
+  <div class="text-container">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'heading' %}
+          <h2
+            class="affiliate__heading inline-richtext {{ block.settings.heading_size }}"
+            {{ block.shopify_attributes }}
+          >
+            {{ block.settings.heading }}
+          </h2>
+        {% when 'text' %}
+          <div class="affiliate__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
+            <span>
+              {{ block.settings.text }}
+            </span>
+          </div>
+      {% endcase %}
+    {% endfor %}
+  </div>
+  <div class="image-items-container">
+    <div class="image-items-wrapper">
+      <div class="image-marquee-content">
+        <div class="image-item">
+          {% if section.settings.image != blank %}
+            {{ section.settings.image | image_url: width: 600 | image_tag }}
+          {% endif %}
+        </div>
+        <div class="image-item">
+          {% if section.settings.image != blank %}
+            {{ section.settings.image | image_url: width: 600 | image_tag }}
+          {% endif %}
+        </div>
+        <div class="image-item">
+          {% if section.settings.image != blank %}
+            {{ section.settings.image | image_url: width: 600 | image_tag }}
+          {% endif %}
+        </div>
+        <div class="image-item">
+          {% if section.settings.image != blank %}
+            {{ section.settings.image | image_url: width: 600 | image_tag }}
+          {% endif %}
+        </div>
+        <div class="image-item">
+          {% if section.settings.image != blank %}
+            {{ section.settings.image | image_url: width: 600 | image_tag }}
+          {% endif %}
+        </div>
+        <div class="image-item">
+          {% if section.settings.image != blank %}
+            {{ section.settings.image | image_url: width: 600 | image_tag }}
+          {% endif %}
+        </div>
+        <div class="image-item">
+          {% if section.settings.image != blank %}
+            {{ section.settings.image | image_url: width: 600 | image_tag }}
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="image-marquee-content" aria-hidden="true">
+        <div class="image-item">
+          {% if section.settings.image != blank %}
+            {{ section.settings.image | image_url: width: 600 | image_tag }}
+          {% endif %}
+        </div>
+        <div class="image-item">
+          {% if section.settings.image != blank %}
+            {{ section.settings.image | image_url: width: 600 | image_tag }}
+          {% endif %}
+        </div>
+        <div class="image-item">
+          {% if section.settings.image != blank %}
+            {{ section.settings.image | image_url: width: 600 | image_tag }}
+          {% endif %}
+        </div>
+        <div class="image-item">
+          {% if section.settings.image != blank %}
+            {{ section.settings.image | image_url: width: 600 | image_tag }}
+          {% endif %}
+        </div>
+        <div class="image-item">
+          {% if section.settings.image != blank %}
+            {{ section.settings.image | image_url: width: 600 | image_tag }}
+          {% endif %}
+        </div>
+        <div class="image-item">
+          {% if section.settings.image != blank %}
+            {{ section.settings.image | image_url: width: 600 | image_tag }}
+          {% endif %}
+        </div>
+        <div class="image-item">
+          {% if section.settings.image != blank %}
+            {{ section.settings.image | image_url: width: 600 | image_tag }}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    <div class="image-items-wrapper">
+      <div class="image-marquee-content animation-reverse">
+        <div class="image-item">
+          {% if section.settings.image != blank %}
+            {{ section.settings.image | image_url: width: 600 | image_tag }}
+          {% endif %}
+        </div>
+        <div class="image-item">
+          {% if section.settings.image != blank %}
+            {{ section.settings.image | image_url: width: 600 | image_tag }}
+          {% endif %}
+        </div>
+        <div class="image-item">
+          {% if section.settings.image != blank %}
+            {{ section.settings.image | image_url: width: 600 | image_tag }}
+          {% endif %}
+        </div>
+        <div class="image-item">
+          {% if section.settings.image != blank %}
+            {{ section.settings.image | image_url: width: 600 | image_tag }}
+          {% endif %}
+        </div>
+        <div class="image-item">
+          {% if section.settings.image != blank %}
+            {{ section.settings.image | image_url: width: 600 | image_tag }}
+          {% endif %}
+        </div>
+        <div class="image-item">
+          {% if section.settings.image != blank %}
+            {{ section.settings.image | image_url: width: 600 | image_tag }}
+          {% endif %}
+        </div>
+        <div class="image-item">
+          {% if section.settings.image != blank %}
+            {{ section.settings.image | image_url: width: 600 | image_tag }}
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="image-marquee-content animation-reverse" aria-hidden="true">
+        <div class="image-item">
+          {% if section.settings.image != blank %}
+            {{ section.settings.image | image_url: width: 600 | image_tag }}
+          {% endif %}
+        </div>
+        <div class="image-item">
+          {% if section.settings.image != blank %}
+            {{ section.settings.image | image_url: width: 600 | image_tag }}
+          {% endif %}
+        </div>
+        <div class="image-item">
+          {% if section.settings.image != blank %}
+            {{ section.settings.image | image_url: width: 600 | image_tag }}
+          {% endif %}
+        </div>
+        <div class="image-item">
+          {% if section.settings.image != blank %}
+            {{ section.settings.image | image_url: width: 600 | image_tag }}
+          {% endif %}
+        </div>
+        <div class="image-item">
+          {% if section.settings.image != blank %}
+            {{ section.settings.image | image_url: width: 600 | image_tag }}
+          {% endif %}
+        </div>
+        <div class="image-item">
+          {% if section.settings.image != blank %}
+            {{ section.settings.image | image_url: width: 600 | image_tag }}
+          {% endif %}
+        </div>
+        <div class="image-item">
+          {% if section.settings.image != blank %}
+            {{ section.settings.image | image_url: width: 600 | image_tag }}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{%- schema -%}
+{
+  "name": "t:sections.affiliate-section.name",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:sections.affiliate-section.settings.image.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "image2",
+      "label": "t:sections.affiliate-section.settings.image.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "image3",
+      "label": "t:sections.affiliate-section.settings.image.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "image4",
+      "label": "t:sections.affiliate-section.settings.image.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "image5",
+      "label": "t:sections.affiliate-section.settings.image.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "image6",
+      "label": "t:sections.affiliate-section.settings.image.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "image7",
+      "label": "t:sections.affiliate-section.settings.image.label"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "accent-1",
+          "label": "t:sections.all.colors.accent_1.label"
+        },
+        {
+          "value": "accent-2",
+          "label": "t:sections.all.colors.accent_2.label"
+        },
+        {
+          "value": "background-1",
+          "label": "t:sections.all.colors.background_1.label"
+        },
+        {
+          "value": "background-2",
+          "label": "t:sections.all.colors.background_2.label"
+        },
+        {
+          "value": "inverse",
+          "label": "t:sections.all.colors.inverse.label"
+        }
+      ],
+      "default": "background-1",
+      "label": "t:sections.all.colors.label"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "t:sections.affiliate-section.blocks.heading.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "default": "Trusted by top health experts & professional athletes.",
+          "label": "t:sections.affiliate-section.blocks.heading.settings.heading.label"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "h2",
+              "label": "t:sections.all.heading_size.options__1.label"
+            },
+            {
+              "value": "h1",
+              "label": "t:sections.all.heading_size.options__2.label"
+            },
+            {
+              "value": "h0",
+              "label": "t:sections.all.heading_size.options__3.label"
+            }
+          ],
+          "default": "h1",
+          "label": "t:sections.all.heading_size.label"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "t:sections.affiliate-section.blocks.text.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>The MOVE+ Pro’s quality is recognized and relied upon by distinguished healthcare professionals and elite athletes alike. See all our athletes & partners.</p>",
+          "label": "t:sections.affiliate-section.blocks.text.settings.text.label"
+        },
+        {
+          "type": "select",
+          "id": "text_style",
+          "options": [
+            {
+              "value": "body",
+              "label": "t:sections.affiliate-section.blocks.text.settings.text_style.options__1.label"
+            },
+            {
+              "value": "subtitle",
+              "label": "t:sections.affiliate-section.blocks.text.settings.text_style.options__2.label"
+            }
+          ],
+          "default": "body",
+          "label": "t:sections.affiliate-section.blocks.text.settings.text_style.label"
+        }
+      ]
+    }
+  ],
+  "presets": [{ "name": "t:sections.affiliate-section.presets.name" }]
+}
+{%- endschema -%}

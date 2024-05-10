@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "299eb8c7d8382ad9ba2a51fa713eb3e8"
+name = "shoeswa"
+handle = "shoeswa"
+application_url = "https://fighting-assistant-adjacent-image.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "shoeswa.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://fighting-assistant-adjacent-image.trycloudflare.com/auth/callback",
+  "https://fighting-assistant-adjacent-image.trycloudflare.com/auth/shopify/callback",
+  "https://fighting-assistant-adjacent-image.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
